@@ -1,0 +1,39 @@
+backend:
+  provider: deepseek # ollama, gpt, gpt4, deepseek, gemini, mixed, qwen, ernie, glm, spark, hunyuan
+  google_api_key: YOUR_GOOGLE_API_KEY_HERE # only for gemini
+  # openai_api_key/base_url are also used directly by backend/gpt.py's query_gpt/query_gpt4
+  # (independent of `provider`). No real OpenAI key is available in this workspace, so these
+  # are pointed at the DeepSeek OpenAI-compatible endpoint as a substitute backend for the
+  # Needle_in_the_Persona and Schedule pipelines, which call query_gpt4() directly.
+  openai_api_key: YOUR_OPENAI_COMPATIBLE_API_KEY_HERE
+  deepseek_api_key: YOUR_DEEPSEEK_API_KEY_HERE
+  qwen_api_key: YOUR_QWEN_API_KEY_HERE # only for qwen
+  QIANFAN_ACCESS_KEY: YOUR_QIANFAN_ACCESS_KEY_HERE # only for baidu qianfan
+  QIANFAN_SECRET_KEY: YOUR_QIANFAN_SECRET_KEY_HERE # only for baidu qianfan
+  glm_api_key: YOUR_GLM_API_KEY_HERE # only for glm
+  hunyuan_api_key: YOUR_HUANYUAN_API_KEY_HERE # only for hunyuan
+  spark_api_key: YOUR_SPARK_API_KEY_HERE # only for spark
+  ollama_model_name: qwen2:7b # only for ollama
+  base_url: https://api.deepseek.com/v1 # only for openai-compatible api
+  gpt4_model_name: deepseek-v4-flash # model id used by query_gpt4() when hitting base_url above (this account's deepseek proxy only serves deepseek-v4-pro/-flash, not the public "deepseek-chat" id)
+website:
+  host: 0.0.0.0
+  port: 5050
+  flask_secret: iAgents
+mysql:
+  host: 127.0.0.1
+  port: 3311 # iagents-mariadb docker container (system MariaDB has no root access for this OS user)
+  username: iagents_user
+  password: YOUR_DATABASE_PASSWORD_HERE
+  database: iagents
+logging:
+  level: INFO
+  logname: test
+agent:
+  max_query_retry_times: 1
+  max_communication_turns: 3
+  max_tool_retry_times: 1
+  rewrite_prompt: False
+  use_llamaindex: True
+mode:
+  mode: Base # Base, RAG

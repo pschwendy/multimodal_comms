@@ -1,0 +1,13 @@
+NAME:
+Mashed Broccoli and Bean Patty
+
+INGREDIENTS:
+broccoli (1)
+bean(1)
+
+COOKING STEPs:
+1. Cut the broccoli into slices.
+2. Place the broccoli slices in a pot to cook for 3 timesteps.
+3. Put the boiled broccoli slices in a blender and stir.
+4. Place the bean and mashed broccoli in the oven and bake for 3 timesteps.
+5. Transfer the mashed broccoli and bean patty to a plate and serve.

@@ -1,0 +1,53 @@
+# HiddenBench Configuration - DeepSeek (hosted API) + MWNOT-generator
+# autoencoder compressor.
+# ===================================================
+# Same deepseek-v4-flash sender/receiver setup as config_deepseek.yaml, with
+# the channel compressor set to "mwnot_autoencoder": the encoder pools the
+# ENTIRE message's hidden-state sequence into num_latents generator vectors
+# via a multiwavelet neural operator (adapted from MWNOT-portable), instead
+# of sampling num_latents positions like the plain "autoencoder" compressor
+# (config_deepseek_autoencoder.yaml). See training.programs.pretrain_mwnot_autoencoder
+# and src/hiddenbench/mwnot_generator.py.
+#
+# Point mwnot_autoencoder_model at a checkpoint produced by
+# training.programs.pretrain_mwnot_autoencoder before running with this config.
+#
+# Set OPENAI_API_KEY in the environment before running this configuration.
+
+providers:
+  openai:
+    api_key: "your-openai-compatible-api-key-here"
+    default_model: "deepseek-v4-flash"
+    base_url: "https://api.deepseek.com/v1"
+    timeout: 120
+    est_base_input_tokens: 1000
+    est_output_tokens: 150
+    est_context_growth: 250
+
+benchmark:
+  provider: "openai"
+  model: "deepseek-v4-flash"
+  num_agents: 4
+  num_rounds: 15
+  temperature: 0.7
+  max_tokens: 500
+  data_dir: "src/multimodal_comms/benchmarks/hiddenbench/data/hiddenbench_official"
+  tasks_dir: "experiments/hiddenbench/tasks"
+  reports_dir: "outputs/hiddenbench/reports"
+  use_official_data: true
+  use_custom_tasks: true
+  run_full_profile: true
+
+channel:
+  compressor: "mwnot_autoencoder"
+  mwnot_autoencoder_model: "data/mwnot_autoencoder_pretrain/final"
+  mwnot_autoencoder_num_latents: 4
+  mwnot_autoencoder_device: "cuda:0"
+
+advanced:
+  max_retries: 3
+  retry_delay: 1.0
+  rate_limit: 0
+  log_level: "INFO"
+  save_intermediate: true
+  parallel_tasks: 1

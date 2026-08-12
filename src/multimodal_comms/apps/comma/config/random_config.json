@@ -1,0 +1,16 @@
+{
+    "Hyperparameters": {
+        "MAX_MISTAKES": 3,
+        "MAX_CONVERSATION_TURNS": 10,
+        "SERIAL_NUMBER": 135790,
+        "TOTAL_TIME": 3000
+    },
+    "Experts": [{
+        "file_path": "agents/random_agent.py",
+        "class_name": "RandomAgent"
+    }],
+    "Solvers": [{
+        "file_path": "agents/random_agent.py",
+        "class_name": "RandomAgent"
+    }]
+}

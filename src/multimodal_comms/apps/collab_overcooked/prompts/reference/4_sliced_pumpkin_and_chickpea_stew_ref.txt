@@ -1,0 +1,50 @@
+{
+    "reference_1": 
+    {
+        "agent_0": [
+            "pickup(pumpkin_slices, counter)",
+            "put_obj_in_utensil(pot0)",
+            "pickup(chickpea,counter)",
+            "put_obj_in_utensil(pot0)",
+            "cook(pot0)",
+            "pickup(dish,counter)",
+            "fill_dish_with_food(pot0)",
+            "deliver_soup()"
+        ],
+        "agent_1": [
+            "pickup(pumpkin, ingredient_dispenser)",
+            "put_obj_in_utensil(chopping_board0)",
+            "cut(chopping_board0)",
+            "pickup(pumpkin_slices,chopping_board0)",
+            "place_obj_on_counter()",
+            "pickup(chickpea,ingredient_dispenser)",
+            "place_obj_on_counter()",
+            "pickup(dish,dish_dispenser)",
+            "place_obj_on_counter()"
+        ]
+    },
+    "reference_2": 
+    {
+        "agent_0": [
+            "pickup(chickpea,counter)",
+            "put_obj_in_utensil(pot0)",
+            "pickup(pumpkin_slices, counter)",
+            "put_obj_in_utensil(pot0)",
+            "cook(pot0)",
+            "pickup(dish,counter)",
+            "fill_dish_with_food(pot0)",
+            "deliver_soup()"
+        ],
+        "agent_1": [
+            "pickup(pumpkin, ingredient_dispenser)",
+            "put_obj_in_utensil(chopping_board0)",
+            "cut(chopping_board0)",
+            "pickup(chickpea,ingredient_dispenser)",
+            "place_obj_on_counter()",
+            "pickup(pumpkin_slices,chopping_board0)",
+            "place_obj_on_counter()",
+            "pickup(dish,dish_dispenser)",
+            "place_obj_on_counter()"
+        ]
+    }
+}

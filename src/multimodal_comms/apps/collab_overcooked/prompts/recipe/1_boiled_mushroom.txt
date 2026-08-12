@@ -1,0 +1,10 @@
+NAME:
+Boiled Mushroom
+
+INGREDIENTS:
+mushroom (1)
+
+COOKING STEPs:
+1. Pick up a mushroom.
+2. Place the mushroom in the pot and cook for 3 timesteps.
+3. Take the boiled mushroom out of the pot and serve it.

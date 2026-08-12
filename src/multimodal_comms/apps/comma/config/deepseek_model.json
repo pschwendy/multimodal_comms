@@ -1,0 +1,17 @@
+{
+    "Hyperparameters": {
+        "MAX_MISTAKES": 5,
+        "MAX_CONVERSATION_TURNS": 12,
+        "SERIAL_NUMBER": 424242,
+        "TOTAL_TIME": 3000,
+        "EXPERT_MESSAGE_WORD_LIMIT": 100
+    },
+    "Experts": [{
+        "file_path": "agents/deepseek_agent.py",
+        "class_name": "DeepSeekAgent"
+    }],
+    "Solvers": [{
+        "file_path": "agents/deepseek_agent.py",
+        "class_name": "DeepSeekAgent"
+    }]
+}

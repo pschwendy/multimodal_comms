@@ -1,0 +1,10 @@
+NAME:
+Boiled Green Bean Slices
+
+INGREDIENTS:
+green_bean(1)
+
+COOKING STEPs:
+1. Cut a green bean into slices.
+2. Place the green bean slices into the pot and cook for 3 timesteps.
+3. Afterwards, take the boiled green bean slices directly from the pot and serve.

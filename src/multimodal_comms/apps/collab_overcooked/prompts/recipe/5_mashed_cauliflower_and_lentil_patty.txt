@@ -1,0 +1,13 @@
+NAME:
+Mashed Cauliflower and Lentil Patty
+
+INGREDIENTS:
+cauliflower (1)
+lentil(1)
+
+COOKING STEPs:
+1. Cut the cauliflower into slices.
+2. Place the cauliflower slices in a pot to cook for 3 timesteps.
+3. Put the boiled cauliflower slices in a blender and stir.
+4. Place the lentil and mashed cauliflower in the oven and bake for 3 timesteps.
+5. Transfer the mashed cauliflower and lentil patty to a plate and serve.

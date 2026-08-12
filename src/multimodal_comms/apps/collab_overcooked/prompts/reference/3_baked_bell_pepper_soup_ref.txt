@@ -1,0 +1,25 @@
+{
+    "reference_1": 
+    {
+        "agent_0": [
+            "pickup(bell_pepper_slices, counter)",
+            "put_obj_in_utensil(oven0)",
+            "bake(oven0)",
+            "pickup(baked_bell_pepper_slices, oven0)",
+            "put_obj_in_utensil(pot0)",
+            "cook(pot0)",
+            "pickup(dish,counter)",
+            "fill_dish_with_food(pot0)",
+            "deliver_soup()"
+        ],
+        "agent_1": [
+            "pickup(bell_pepper, ingredient_dispenser)",
+            "put_obj_in_utensil(chopping_board0)",
+            "cut(chopping_board0)",
+            "pickup(bell_pepper_slices,chopping_board0)",
+            "place_obj_on_counter()",
+            "pickup(dish,dish_dispenser)",
+            "place_obj_on_counter()"
+        ]
+    }
+}

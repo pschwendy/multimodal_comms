@@ -1,0 +1,13 @@
+NAME:
+Mashed Sweet Potato and bean Patty
+
+INGREDIENTS:
+sweet_potato (1)
+bean(1)
+
+COOKING STEPs:
+1. Cut the sweet potato into slices.
+2. Place the sweet potato slices in a pot to cook for 3 timesteps.
+3. Put the boiled sweet potato slices in a blender and stir.
+4. Place the bean and mashed sweet potato in the oven and bake for 3 timesteps.
+5. Transfer the mashed sweet potato and bean patty to a plate and serve.

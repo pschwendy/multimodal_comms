@@ -1,0 +1,10 @@
+NAME:
+Boiled Sweet Potato
+
+INGREDIENTS:
+sweet_potato (1)
+
+COOKING STEPs:
+1. Pick up a sweet potato.
+2. Place the sweet potato in the pot and cook for 3 timesteps.
+3. Take the boiled sweet potato out of the pot and serve it.

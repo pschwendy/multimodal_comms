@@ -1,0 +1,10 @@
+NAME:
+Boiled Corn Slices
+
+INGREDIENTS:
+corn(1)
+
+COOKING STEPs:
+1. Cut a corn into slices.
+2. Place the corn slices into the pot and cook for 3 timesteps.
+3. Afterwards, take the boiled corn slices directly from the pot and serve.

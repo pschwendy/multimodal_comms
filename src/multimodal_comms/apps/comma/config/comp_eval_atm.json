@@ -1,0 +1,38 @@
+[
+  {
+    "AtmPuzzle": {
+      "PIN": "9486",
+      "Balance": 523
+    }
+  },
+  {
+    "AtmPuzzle": {
+      "PIN": "4416",
+      "Balance": 423
+    }
+  },
+  {
+    "AtmPuzzle": {
+      "PIN": "9116",
+      "Balance": 532
+    }
+  },
+  {
+    "AtmPuzzle": {
+      "PIN": "4954",
+      "Balance": 247
+    }
+  },
+  {
+    "AtmPuzzle": {
+      "PIN": "5820",
+      "Balance": 636
+    }
+  },
+  {
+    "AtmPuzzle": {
+      "PIN": "4082",
+      "Balance": 336
+    }
+  }
+]

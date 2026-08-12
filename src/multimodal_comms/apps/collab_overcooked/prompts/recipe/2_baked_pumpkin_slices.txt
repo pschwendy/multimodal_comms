@@ -1,0 +1,10 @@
+NAME:
+Baked Pumpkin Slices
+
+INGREDIENTS:
+pumpkin(1)
+
+COOKING STEPs:
+1. Cut a pumpkin into slices.
+2. Place the pumpkin slices into the oven and bake for 3 timesteps.
+3. Afterwards, take the baked pumpkin slices directly from the oven and serve.

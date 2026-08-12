@@ -1,0 +1,10 @@
+NAME:
+Baked Sweet Potato
+
+INGREDIENTS:
+sweet_potato (1)
+
+COOKING STEPs:
+1. Pick up a sweet potato.
+2. Place the sweet potato in the oven and bake for 3 timesteps.
+3. Take the baked sweet potato out of the oven and serve it.

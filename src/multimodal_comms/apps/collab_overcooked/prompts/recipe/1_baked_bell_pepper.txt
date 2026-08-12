@@ -1,0 +1,10 @@
+NAME:
+Baked Bell Pepper
+
+INGREDIENTS:
+bell_pepper (1)
+
+COOKING STEPs:
+1. Pick up a bell pepper.
+2. Place the bell pepper in the oven and bake for 3 timesteps.
+3. Take the baked bell pepper out of the oven and serve it.

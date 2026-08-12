@@ -1,0 +1,12 @@
+NAME:
+Sliced Bell Pepper and Corn Stew
+
+INGREDIENTS:
+bell_pepper (1)
+corn(1)
+
+COOKING STEPs:
+1. Cut a bell pepper into slices.
+2. Place the bell pepper slices and corn in a pot.
+3. Cook the ingredients in the pot for 3 timesteps.
+4. Fill a dish with the stew from the pot and serve.

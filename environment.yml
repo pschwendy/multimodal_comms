@@ -1,0 +1,17 @@
+name: multimodal-comms
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.12
+  - numpy>=1.24
+  - scipy>=1.10
+  - scikit-learn>=1.3
+  - pillow>=10
+  - flask>=3
+  - pyyaml>=6
+  - pytest>=7.4
+  - pytest-cov>=4
+  - mypy>=1.10
+  - ruff>=0.5
+  - pip

@@ -1,0 +1,11 @@
+NAME:
+Baked Pumpkin Soup
+
+INGREDIENTS:
+pumpkin(1)
+
+COOKING STEPs:
+1. Cut a pumpkin into slices.
+2. Place the pumpkin slices in the oven and bake for 3 timesteps.
+3. Transfer the baked pumpkin slices to a pot and cook for 3 timesteps.
+4. Fill a dish with the soup from the pot and serve.

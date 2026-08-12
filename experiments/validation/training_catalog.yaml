@@ -1,0 +1,64 @@
+entry_points:
+  - path: src/multimodal_comms/methods/autoencoders/mwnot/train.py
+    model_family: MWNOT graph operator
+    behavioral_probe: mwnot_operator
+  - path: training/benchmark_adaptation/comma/train_repmatch_grpo.py
+    model_family: text policy with GRPO
+    behavioral_probe: policy_optimization
+  - path: training/benchmark_adaptation/comma/train_repmatch_selector.py
+    model_family: selector regression
+    behavioral_probe: selector_models
+  - path: training/programs/gkd_train.py
+    model_family: causal LM distribution distillation
+    behavioral_probe: distribution_distillation
+  - path: training/programs/pretrain_autoencoder.py
+    model_family: sampled-latent causal LM autoencoder
+    behavioral_probe: latent_bottleneck
+  - path: training/programs/pretrain_image_packed.py
+    model_family: image latent bottleneck
+    behavioral_probe: image_bottleneck
+  - path: training/programs/pretrain_mwnot_autoencoder.py
+    model_family: MWNOT sequence generator and causal LM
+    behavioral_probe: sequence_generator
+  - path: training/programs/pretrain_packed.py
+    model_family: matryoshka packed latent bottleneck
+    behavioral_probe: latent_bottleneck
+  - path: training/programs/pretrain_superpose.py
+    model_family: crosstalk-robust causal LM autoencoder
+    behavioral_probe: latent_bottleneck
+  - path: training/programs/train_autoencoder.py
+    model_family: projected latent causal LM autoencoder
+    behavioral_probe: latent_bottleneck
+  - path: training/programs/train_counterfactual_scorer.py
+    model_family: counterfactual score regression
+    behavioral_probe: selector_models
+  - path: training/programs/train_feistel_keyring.py
+    model_family: Feistel round functions
+    behavioral_probe: feistel_keyring
+  - path: training/programs/train_latent_reader.py
+    model_family: latent-conditioned causal LM
+    behavioral_probe: distribution_distillation
+  - path: training/programs/train_repmatch_grpo.py
+    model_family: text policy with GRPO
+    behavioral_probe: policy_optimization
+  - path: training/programs/train_repmatch_selector.py
+    model_family: representation-match regression
+    behavioral_probe: selector_models
+  - path: training/programs/train_rewriter_grpo.py
+    model_family: behavior-matching text policy with GRPO
+    behavioral_probe: policy_optimization
+  - path: training/programs/train_selector.py
+    model_family: sentence selector classification
+    behavioral_probe: selector_models
+  - path: training/programs/train_tokenfilter_pg.py
+    model_family: token filtering policy
+    behavioral_probe: token_policy
+  - path: training/programs/train_vib_grpo.py
+    model_family: variational sender text policy with GRPO
+    behavioral_probe: policy_optimization
+  - path: training/benchmark_adaptation/iagents/train_repmatch_grpo.py
+    model_family: text policy with GRPO
+    behavioral_probe: policy_optimization
+  - path: training/benchmark_adaptation/iagents/train_repmatch_selector.py
+    model_family: selector regression
+    behavioral_probe: selector_models

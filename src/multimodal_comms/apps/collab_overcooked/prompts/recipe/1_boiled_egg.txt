@@ -1,0 +1,10 @@
+NAME:
+Boiled Egg
+
+INGREDIENTS:
+egg (1)
+
+COOKING STEPs:
+1. Pick up an egg.
+2. Place the egg in the pot and cook for 3 timesteps.
+3. Take the egg out of the pot and serve it.

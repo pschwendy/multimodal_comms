@@ -1,0 +1,9 @@
+{environment_rule}
+
+<Recipe need to know>:
+{recipe}
+
+{skill}
+
+{communication_rule}
+

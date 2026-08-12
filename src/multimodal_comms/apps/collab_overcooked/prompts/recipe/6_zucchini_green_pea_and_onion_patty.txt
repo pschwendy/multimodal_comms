@@ -1,0 +1,15 @@
+Name:
+Zucchini, Green Pea, and Onion Patty
+
+Ingredients:
+zucchini (1)
+green_pea (1)
+onion (1)
+
+Cooking Steps:
+1. Cut the zucchini into slices.
+2. Place the zucchini slices in a pot to cook for 3 timesteps.
+3. Put the boiled zucchini slices into a blender. Start the blender and stir for 3 timesteps.
+4. Cut the onion into slices.
+5. Place the green pea, mashed zucchini and onion slices into the oven. Start the oven and bake for 3 timesteps.
+6. Transfer the zucchini, green pea, and onion patty to a plate and serve.

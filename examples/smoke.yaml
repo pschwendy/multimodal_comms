@@ -1,0 +1,5 @@
+method: identity
+seed: 7
+messages:
+  - "first agent observation"
+  - "second agent response"

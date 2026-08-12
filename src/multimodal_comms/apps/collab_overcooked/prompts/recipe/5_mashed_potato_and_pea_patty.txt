@@ -1,0 +1,13 @@
+NAME:
+Mashed Potato and Pea Patty
+
+INGREDIENTS:
+potato (1)
+pea(1)
+
+COOKING STEPs:
+1. Cut the potato into slices.
+2. Place the potato slices in a pot to cook for 3 timesteps.
+3. Put the boiled potato slices in a blender and stir.
+4. Place the pea and mashed potato in the oven and bake for 3 timesteps.
+5. Transfer the mashed potato and pea patty to a plate and serve.

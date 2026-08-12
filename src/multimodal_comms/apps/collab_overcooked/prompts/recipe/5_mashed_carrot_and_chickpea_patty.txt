@@ -1,0 +1,13 @@
+NAME:
+Mashed Carrot and Chickpea Patty
+
+INGREDIENTS:
+carrot (1)
+chickpea(1)
+
+COOKING STEPs:
+1. Cut the carrot into slices.
+2. Place the carrot slices in a pot to cook for 3 timesteps.
+3. Put the boiled carrot slices in a blender and stir.
+4. Place the chickpea and mashed carrot in the oven and bake for 3 timesteps.
+5. Transfer the mashed carrot and chickpea patty to a plate and serve.

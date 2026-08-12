@@ -1,0 +1,11 @@
+NAME:
+Baked Mushroom Soup
+
+INGREDIENTS:
+mushroom(1)
+
+COOKING STEPs:
+1. Cut a mushroom into slices.
+2. Place the mushroom slices in the oven and bake for 3 timesteps.
+3. Transfer the baked mushroom slices to a pot and cook for 3 timesteps.
+4. Fill a dish with the soup from the pot and serve.

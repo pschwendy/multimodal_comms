@@ -1,0 +1,18 @@
+{
+    "Hyperparameters": {
+        "MAX_MISTAKES": 3,
+        "MAX_CONVERSATION_TURNS": 10,
+        "SERIAL_NUMBER": 123456,
+        "STARTING_PUZZLE": 0
+    },
+    "Experts": [{
+        "file_path": "agents/r1_onevision.py",
+        "class_name": "OneVisionAgent",
+        "DEVICE": "cuda:0"
+    }],
+    "Solvers": [{
+        "file_path": "agents/r1_onevision.py",
+        "class_name": "OneVisionAgent",
+        "DEVICE": "cuda:0"
+    }]
+}

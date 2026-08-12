@@ -1,0 +1,15 @@
+Name:
+Potato, Carrot, and Onion Patty
+
+Ingredients:
+potato (1)
+carrot (1)
+onion (1)
+
+Cooking Steps:
+1. Cut the potato into slices.
+2. Place the potato slices in a pot to cook for 3 timesteps.
+3. Put the boiled potato slices into a blender. Start the blender and stir for 3 timesteps.
+4. Cut the onion into slices.
+5. Place the carrot, mashed potato and onion slices into the oven. Start the oven and bake for 5 timesteps.
+6. Transfer the potato, carrot, and onion patty to a plate and serve.

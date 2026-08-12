@@ -1,0 +1,17 @@
+{
+    "Hyperparameters": {
+        "MAX_MISTAKES": 3,
+        "MAX_CONVERSATION_TURNS": 20,
+        "SERIAL_NUMBER": 123456
+    },
+    "Experts": [{
+        "file_path": "agents/internVL.py",
+        "class_name": "InternVLAgent",
+        "MODEL_SIZE": "1B",
+        "DEVICE": "cuda:0"
+    }],
+    "Solvers": [{
+        "file_path": "agents/humanAgent.py",
+        "class_name": "HumanAgent"
+    }]
+}

@@ -1,0 +1,70 @@
+{
+    "reference_1": 
+    {
+        "agent_0": [
+            "pickup(cauliflower_slices, counter)",
+            "put_obj_in_utensil(pot0)",
+            "cook(pot0)",
+            "pickup(boiled_cauliflower_slices,pot0)",
+            "place_obj_on_counter()",
+            "pickup(mashed_cauliflower, counter)",
+            "put_obj_in_utensil(oven0)",
+            "pickup(lentil, counter)",
+            "put_obj_in_utensil(oven0)",
+            "bake(oven0)",
+            "pickup(dish,counter)",
+            "fill_dish_with_food(oven0)",
+            "deliver_soup()"
+        ],
+        "agent_1": [
+            "pickup(cauliflower, ingredient_dispenser)",
+            "put_obj_in_utensil(chopping_board0)",
+            "cut(chopping_board0)",
+            "pickup(cauliflower_slices,chopping_board0)",
+            "place_obj_on_counter()",
+            "pickup(boiled_cauliflower_slices, counter)",
+            "put_obj_in_utensil(blender0)",
+            "stir(blender0)",
+            "pickup(mashed_cauliflower,blender0)",
+            "place_obj_on_counter()",
+            "pickup(lentil, ingredient_dispenser)",
+            "place_obj_on_counter()",
+            "pickup(dish,dish_dispenser)",
+            "place_obj_on_counter()"
+        ]
+    },
+    "reference_2": 
+    {
+        "agent_0": [
+            "pickup(cauliflower_slices, counter)",
+            "put_obj_in_utensil(pot0)",
+            "cook(pot0)",
+            "pickup(boiled_cauliflower_slices,pot0)",
+            "place_obj_on_counter()",
+            "pickup(lentil, counter)",
+            "put_obj_in_utensil(oven0)",
+            "pickup(mashed_cauliflower, counter)",
+            "put_obj_in_utensil(oven0)",
+            "bake(oven0)",
+            "pickup(dish,counter)",
+            "fill_dish_with_food(oven0)",
+            "deliver_soup()"
+        ],
+        "agent_1": [
+            "pickup(cauliflower, ingredient_dispenser)",
+            "put_obj_in_utensil(chopping_board0)",
+            "cut(chopping_board0)",
+            "pickup(cauliflower_slices,chopping_board0)",
+            "place_obj_on_counter()",
+            "pickup(lentil, ingredient_dispenser)",
+            "place_obj_on_counter()",
+            "pickup(boiled_cauliflower_slices, counter)",
+            "put_obj_in_utensil(blender0)",
+            "stir(blender0)",
+            "pickup(mashed_cauliflower,blender0)",
+            "place_obj_on_counter()",
+            "pickup(dish,dish_dispenser)",
+            "place_obj_on_counter()"
+        ]
+    }
+}

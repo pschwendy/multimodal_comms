@@ -1,0 +1,21 @@
+{
+    "Hyperparameters": {
+        "MAX_MISTAKES": 3,
+        "MAX_CONVERSATION_TURNS": 10,
+        "SERIAL_NUMBER": 123456
+    },
+    "Experts": [{
+        "file_path": "agents/gpt4o_agent.py",
+        "class_name": "GPT4oAgent",
+        "API_KEY": "",
+        "API_VERSION": "2023-12-01-preview",
+        "API_BASE": "https://chatgpt-simulation.openai.azure.com/" 
+    }],
+    "Solvers": [{
+        "file_path": "agents/gpt4o_agent.py",
+        "class_name": "GPT4oAgent",
+        "API_KEY": "",
+        "API_VERSION": "2023-12-01-preview",
+        "API_BASE": "https://chatgpt-simulation.openai.azure.com/" 
+    }]
+}

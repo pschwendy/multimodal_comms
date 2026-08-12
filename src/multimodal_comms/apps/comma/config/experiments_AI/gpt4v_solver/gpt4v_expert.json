@@ -1,0 +1,21 @@
+{
+    "Hyperparameters": {
+        "MAX_MISTAKES": 3,
+        "MAX_CONVERSATION_TURNS": 10,
+        "SERIAL_NUMBER": 135790
+    },
+    "Experts": [{
+        "file_path": "agents/gpt4v_agent.py",
+        "class_name": "GPT4VAgent",
+        "API_KEY": "",
+        "API_VERSION": "2024-02-15-preview",
+        "API_BASE": "https://gpt4v-simulation.openai.azure.com/" 
+    }],
+    "Solvers": [{
+        "file_path": "agents/gpt4v_agent.py",
+        "class_name": "GPT4VAgent",
+        "API_KEY": "",
+        "API_VERSION": "2024-02-15-preview",
+        "API_BASE": "https://gpt4v-simulation.openai.azure.com/" 
+    }]
+}

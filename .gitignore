@@ -1,0 +1,40 @@
+# Python/build/test state.
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+.venv/
+
+# Local configuration, credentials, and experimental artifacts.
+.env
+.env.*
+!.env.example
+checkpoints/
+outputs/
+artifacts/
+/data/
+/reports/
+reports/raw/
+logs/
+wandb/
+*.log
+*.pid
+*.done
+*.pt
+*.pth
+*.safetensors
+*.ckpt
+*.joblib
+*.pickle
+*.pkl
+*.npz
+
+# Required, compact application fixtures despite their data suffixes.
+!src/multimodal_comms/apps/collab_overcooked/overcooked_ai_py/data/planners/*.pkl
+!src/multimodal_comms/apps/collab_overcooked/overcooked_ai_py/data/testing/*.pickle

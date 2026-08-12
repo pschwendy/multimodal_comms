@@ -1,0 +1,22 @@
+{
+    "Hyperparameters": {
+        "MAX_MISTAKES": 3,
+        "MAX_CONVERSATION_TURNS": 10,
+        "SERIAL_NUMBER": 123456,
+        "TOTAL_TIME": 3000,
+        "STARTING_PUZZLE": 43,
+        "EXPERT_MESSAGE_WORD_LIMIT": 100
+    },
+    "Experts": [{
+        "file_path": "agents/internVL.py",
+        "class_name": "InternVLAgent",
+        "MODEL_SIZE": "8B",
+        "DEVICE": "cuda:0"
+    }],
+    "Solvers": [{
+        "file_path": "agents/internVL.py",
+        "class_name": "InternVLAgent",
+        "MODEL_SIZE": "8B",
+        "DEVICE": "cuda:0"
+    }]
+}

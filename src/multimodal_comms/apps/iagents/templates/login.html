@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>iAgents</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='login_style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="https://github.com/thinkwee/iagents" target="_blank" class="btn">GitHub</a></li>
+                <li><a href="https://arxiv.org/abs/2406.14928" target="_blank" class="btn">Paper</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <img src="{{ url_for('static', filename='login_title.png') }}" alt="iAgents" width="400px" class="login-title">
+
+    <div class="container">
+        <div class="form-toggle">
+            <button id="loginToggle" class="active">Login</button>
+            <button id="registerToggle">Register</button>
+        </div>
+        
+        {% if error %}
+        <div class="error-message">
+            {{ error }}
+        </div>
+        {% endif %}
+
+        <form id="loginForm" method="POST" action="{{ url_for('login') }}" {% if show_register %}style="display: none;"{% endif %}>
+            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <input type="submit" value="Login">
+        </form>
+
+        <form id="registerForm" method="post" action="{{ url_for('register') }}" {% if not show_register %}style="display: none;"{% endif %}>
+            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+            <label for="new_username">New Username:</label>
+            <input type="text" id="new_username" name="username" required>
+            <label for="new_password">New Password:</label>
+            <input type="password" id="new_password" name="password" required>
+            <input type="submit" value="Register">
+        </form>
+    </div>
+
+    <script>
+        const loginToggle = document.getElementById('loginToggle');
+        const registerToggle = document.getElementById('registerToggle');
+        const loginForm = document.getElementById('loginForm');
+        const registerForm = document.getElementById('registerForm');
+        const formToggle = document.querySelector('.form-toggle');
+
+        loginToggle.addEventListener('click', () => {
+            loginForm.style.display = 'block';
+            registerForm.style.display = 'none';
+            loginToggle.classList.add('active');
+            registerToggle.classList.remove('active');
+            formToggle.classList.remove('register');
+        });
+
+        registerToggle.addEventListener('click', () => {
+            loginForm.style.display = 'none';
+            registerForm.style.display = 'block';
+            registerToggle.classList.add('active');
+            loginToggle.classList.remove('active');
+            formToggle.classList.add('register');
+        });
+
+        const characters = [
+            { animation: 'bounce', image: "{{ url_for('static', filename='login_avatar1.png') }}" },
+            { animation: 'bounce', image: "{{ url_for('static', filename='login_avatar2.png') }}" },
+            { animation: 'bounce', image: "{{ url_for('static', filename='login_avatar3.png') }}" },
+            { animation: 'bounce', image: "{{ url_for('static', filename='login_avatar4.png') }}" }
+        ];
+
+        const usedPositions = [];
+
+        characters.forEach((char, index) => {
+            const character = document.createElement('div');
+            character.className = 'character';
+            character.style.backgroundImage = `url('${char.image}')`;
+
+            let leftPosition;
+            do {
+                const randomPosition = Math.random();
+                if (randomPosition < 0.5) {
+                    leftPosition = 10 + (Math.random() * 20); 
+                } else {
+                    leftPosition = 70 + (Math.random() * 20); 
+                }
+            } while (usedPositions.some(pos => Math.abs(pos - leftPosition) < 10)); 
+
+            usedPositions.push(leftPosition);
+
+            character.style.left = `${leftPosition}%`;
+            character.style.bottom = `${Math.random() * 20 + 140}px`;
+            document.body.appendChild(character);
+
+            const tl = gsap.timeline({ repeat: -1, delay: Math.random() * 0.5 }); 
+
+            switch (char.animation) {
+                case 'bounce':
+                    tl.to(character, { y: -30, duration: 0.5, ease: "power1.inOut" })
+                      .to(character, { y: 0, duration: 0.5, ease: "power1.inOut" });
+                    break;
+                case 'jello':
+                    tl.to(character, { rotation: 20, duration: 0.5, ease: "power1.inOut" })
+                      .to(character, { rotation: -20, duration: 0.5, ease: "power1.inOut" })
+                      .to(character, { rotation: 0, duration: 0.5, ease: "power1.inOut" });
+                    break;
+                case 'swing':
+                    tl.to(character, { rotation: 20, duration: 0.5, ease: "power1.inOut" })
+                      .to(character, { rotation: -20, duration: 0.5, ease: "power1.inOut" })
+                      .to(character, { rotation: 0, duration: 0.5, ease: "power1.inOut" });
+                    break;
+                case 'rubberBand':
+                    tl.to(character, { scaleX: 1.25, scaleY: 0.75, duration: 0.5, ease: "power1.inOut" })
+                      .to(character, { scaleX: 1, scaleY: 1, duration: 0.5, ease: "power1.inOut" });
+                    break;
+            }
+        });
+
+        // Page load check for displaying the register form
+        document.addEventListener('DOMContentLoaded', function() {
+            var showRegister = {% if show_register is defined %}{{ show_register|tojson }}{% else %}false{% endif %};
+            var hasError = {% if error %}true{% else %}false{% endif %};
+
+            if (hasError && showRegister) {
+                document.getElementById('loginForm').style.display = 'none';
+                document.getElementById('registerForm').style.display = 'block';
+                document.getElementById('registerToggle').classList.add('active');
+                document.getElementById('loginToggle').classList.remove('active');
+                document.querySelector('.form-toggle').classList.add('register');
+            }
+        });
+    </script>
+</body>
+
+</html>

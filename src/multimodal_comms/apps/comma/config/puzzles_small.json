@@ -1,0 +1,37 @@
+[
+    {
+        "SimpleWirePuzzle": {
+            "notes": "Options for n_wires are 3-6. Colors should be of length n_wires, and each color may be one of red, white, yellow, blue, black",
+            "n_wires": 4,
+            "colors": ["blue", "black", "yellow", "red"]
+        }
+    },
+    {
+        "AtmPuzzle": {
+            "notes": "Need to specify PIN number and Balance.",
+            "PIN": "3285",
+            "Balance": 600
+        }
+    },
+    {
+        "WhoPuzzle": {
+            "display_text": "OKAY",
+            "button_texts": ["WAIT", "PRESS", "UR", "YOU ARE", "MIDDLE", "LEFT"]
+           
+        }
+    },
+    {
+        "MemoryPuzzle": {
+            "notes": "Options for display_text are 1, 2, 3, 4",
+            "display_text": 1
+        }
+    },
+    {
+        "PasswordPuzzle": {
+            "possible_words": ["about", "after", "again", "below", "could", "every", "first", "found", "great", "house", "large", "learn", "never", "other", "place", "plant", "point", "right", "small", "sound", "spell", "still", "study", "their", "there", "these", "thing", "think", "three", "water", "where", "which", "world", "would", "write"],
+            "notes": "Possible letters should be a list of 5 characters. Each character is up to one position away from the correct letter in the answer word.",
+            "answer_word": "below",
+            "current_letters": ["b", "f", "m", "n", "v"]
+        }
+    }
+]

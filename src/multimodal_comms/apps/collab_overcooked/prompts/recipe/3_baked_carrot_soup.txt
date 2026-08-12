@@ -1,0 +1,11 @@
+NAME:
+Baked Carrot Soup
+
+INGREDIENTS:
+carrot(1)
+
+COOKING STEPs:
+1. Cut a carrot into slices.
+2. Place the carrot slices in the oven and bake for 3 timesteps.
+3. Transfer the baked carrot slices to a pot and cook for 3 timesteps.
+4. Fill a dish with the soup from the pot and serve.

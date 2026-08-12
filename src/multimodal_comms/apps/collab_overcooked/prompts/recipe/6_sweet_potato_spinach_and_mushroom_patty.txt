@@ -1,0 +1,15 @@
+Name:
+Sweet potato, Spinach, and Mushroom Patty
+
+Ingredients:
+sweet_sweet (1)
+spinach (1)
+mushroom (1)
+
+Cooking Steps:
+1. Cut the sweet potato into slices.
+2. Place the sweet potato slices in a pot to cook for 3 timesteps.
+3. Put the boiled sweet potato slices into a blender. Start the blender and stir for 3 timesteps.
+4. Cut the mushroom into slices.
+5. Place the spinach, mashed sweet potato and mushroom slices into the oven. Start the oven and bake for 3 timesteps.
+6. Transfer the sweet potato, spinach, and mushroom patty to a plate and serve.

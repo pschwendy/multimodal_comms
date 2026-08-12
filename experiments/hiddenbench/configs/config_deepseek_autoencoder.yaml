@@ -1,0 +1,48 @@
+# HiddenBench Configuration - DeepSeek (hosted API) + large-scale-pretrained
+# autoencoder compressor.
+# ===================================================
+# Same deepseek-v4-flash sender/receiver setup as config_deepseek.yaml, with
+# the channel compressor set to "autoencoder" pointed at the FineWeb-Edu
+# large-scale checkpoint (500k examples, 8-GPU DDP, dev loss 0.46) instead of
+# the old data/autoencoder/final checkpoint (4600 hiddenbench messages only,
+# which degraded task accuracy in reports/ae_autoencoder.md).
+#
+# Set OPENAI_API_KEY in the environment before running this configuration.
+
+providers:
+  openai:
+    api_key: "your-openai-compatible-api-key-here"
+    default_model: "deepseek-v4-flash"
+    base_url: "https://api.deepseek.com/v1"
+    timeout: 120
+    est_base_input_tokens: 1000
+    est_output_tokens: 150
+    est_context_growth: 250
+
+benchmark:
+  provider: "openai"
+  model: "deepseek-v4-flash"
+  num_agents: 4
+  num_rounds: 15
+  temperature: 0.7
+  max_tokens: 500
+  data_dir: "src/multimodal_comms/benchmarks/hiddenbench/data/hiddenbench_official"
+  tasks_dir: "experiments/hiddenbench/tasks"
+  reports_dir: "outputs/hiddenbench/reports"
+  use_official_data: true
+  use_custom_tasks: true
+  run_full_profile: true
+
+channel:
+  compressor: "autoencoder"
+  autoencoder_model: "data/autoencoder_pretrain_large/final"
+  autoencoder_num_latents: 4
+  autoencoder_device: "cuda:0"
+
+advanced:
+  max_retries: 3
+  retry_delay: 1.0
+  rate_limit: 0
+  log_level: "INFO"
+  save_intermediate: true
+  parallel_tasks: 1

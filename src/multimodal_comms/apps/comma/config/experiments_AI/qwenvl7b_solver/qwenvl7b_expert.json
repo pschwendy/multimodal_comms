@@ -1,0 +1,19 @@
+{
+    "Hyperparameters": {
+        "MAX_MISTAKES": 3,
+        "MAX_CONVERSATION_TURNS": 10,
+        "SERIAL_NUMBER": 123456
+    }, 
+    "Experts": [{
+        "file_path": "agents/qwenVL2.py",
+        "class_name": "QwenVLAgent",
+        "MODEL_SIZE": "7B",
+        "DEVICE": "cuda:0"
+    }],
+    "Solvers": [{
+        "file_path": "agents/qwenVL2.py",
+        "class_name": "QwenVLAgent",
+        "MODEL_SIZE": "7B",
+        "DEVICE": "cuda:0"
+    }]
+}

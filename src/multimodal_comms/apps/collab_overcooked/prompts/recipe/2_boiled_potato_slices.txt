@@ -1,0 +1,10 @@
+NAME:
+Boiled Potato Slices
+
+INGREDIENTS:
+potato(1)
+
+COOKING STEPs:
+1. Cut a potato into slices.
+2. Place the potato slices into the pot and cook for 3 timesteps.
+3. Afterwards, take the boiled potato slices directly from the pot and serve.

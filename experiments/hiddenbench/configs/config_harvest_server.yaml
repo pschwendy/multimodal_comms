@@ -1,0 +1,53 @@
+# HiddenBench Configuration - local Qwen3-4B via vLLM
+# ======================================================
+# Served locally with vLLM's OpenAI-compatible API server (no API key needed).
+# Start the server first (from the agent_v2 conda env):
+#
+#   conda run -n agent_v2 --no-capture-output vllm serve Qwen/Qwen3-4B \
+#     --port 8000 --host 127.0.0.1 \
+#     --gpu-memory-utilization 0.85 --max-model-len 32768 \
+#     --reasoning-parser qwen3
+#
+# --reasoning-parser qwen3 strips Qwen3's <think>...</think> reasoning out of
+# the response content (into a separate reasoning_content field), and
+# extra_body.chat_template_kwargs.enable_thinking below disables thinking mode
+# entirely so responses stay short, fast, and reliably fit within max_tokens.
+
+providers:
+  openai:
+    # vLLM's server doesn't check the key's value, but the client requires
+    # a non-empty string that isn't the placeholder HiddenBench rejects.
+    api_key: "local-vllm-no-key-needed"
+    default_model: "Qwen/Qwen3-4B"
+    base_url: "http://127.0.0.1:8001/v1"
+    timeout: 120
+    # Disable Qwen3's "thinking" mode so replies are short and consistent.
+    extra_body:
+      chat_template_kwargs:
+        enable_thinking: false
+    # Token estimation parameters (rough, local models vary)
+    est_base_input_tokens: 1000
+    est_output_tokens: 150
+    est_context_growth: 250
+
+benchmark:
+  provider: "openai"
+  model: "Qwen/Qwen3-4B"
+  num_agents: 4
+  num_rounds: 15
+  temperature: 0.7
+  max_tokens: 500
+  data_dir: "src/multimodal_comms/benchmarks/hiddenbench/data/hiddenbench_official"
+  tasks_dir: "experiments/hiddenbench/tasks"
+  reports_dir: "outputs/hiddenbench/harvest_server"
+  use_official_data: true
+  use_custom_tasks: true
+  run_full_profile: true
+
+advanced:
+  max_retries: 3
+  retry_delay: 1.0
+  rate_limit: 0
+  log_level: "INFO"
+  save_intermediate: true
+  parallel_tasks: 1

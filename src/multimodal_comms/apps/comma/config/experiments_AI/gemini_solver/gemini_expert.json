@@ -1,0 +1,20 @@
+{
+    "Hyperparameters": {
+        "MAX_MISTAKES": 3,
+        "MAX_CONVERSATION_TURNS": 10,
+        "SERIAL_NUMBER": 123456,
+        "STARTING_PUZZLE":   0
+    },
+    "Experts": [{
+        "file_path": "agents/gemini_agent.py",
+        "class_name": "GeminiAgent",
+        "API_KEY": "",
+        "MODEL_NAME": ""
+    }],
+    "Solvers": [{
+        "file_path": "agents/gemini_agent.py",
+        "class_name": "GeminiAgent",
+        "API_KEY": "",
+        "MODEL_NAME": ""
+    }]
+}

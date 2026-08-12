@@ -1,0 +1,16 @@
+{
+    "reference_1": 
+    {
+        "agent_0": [
+            "pickup(sweet_potato, counter)",
+            "put_obj_in_utensil(oven0)",
+            "bake(oven0)",
+            "pickup(baked_sweet_potato,oven0)",
+            "deliver_soup()"
+        ],
+        "agent_1": [
+            "pickup(sweet_potato, ingredient_dispenser)",
+            "place_obj_on_counter()"
+        ]
+    }
+}

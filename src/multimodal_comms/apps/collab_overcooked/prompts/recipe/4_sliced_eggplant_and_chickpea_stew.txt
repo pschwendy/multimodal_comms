@@ -1,0 +1,12 @@
+NAME:
+Sliced Eggplant and Chickpea Stew
+
+INGREDIENTS:
+eggplant (1)
+chickpea(1)
+
+COOKING STEPs:
+1. Cut an eggplant into slices.
+2. Place the eggplant slices and chickpea in a pot.
+3. Cook the ingredients in the pot for 3 timesteps.
+4. Fill a dish with the stew from the pot and serve.

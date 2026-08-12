@@ -1,0 +1,40 @@
+# HiddenBench Configuration - DeepSeek (hosted API)
+# ===================================================
+# Fallback/comparison run against DeepSeek's hosted API. Unlike the local
+# Qwen3-4B setup, DeepSeek's API supports a much larger context window
+# (64K), so it shouldn't hit the context-overflow issues seen with the
+# small local model at the paper's default 4 agents / 15 rounds.
+#
+# Set OPENAI_API_KEY in the environment before running this configuration.
+
+providers:
+  openai:
+    api_key: "your-openai-compatible-api-key-here"
+    default_model: "deepseek-v4-flash"
+    base_url: "https://api.deepseek.com/v1"
+    timeout: 120
+    est_base_input_tokens: 1000
+    est_output_tokens: 150
+    est_context_growth: 250
+
+benchmark:
+  provider: "openai"
+  model: "deepseek-v4-flash"
+  num_agents: 4
+  num_rounds: 15
+  temperature: 0.7
+  max_tokens: 500
+  data_dir: "src/multimodal_comms/benchmarks/hiddenbench/data/hiddenbench_official"
+  tasks_dir: "experiments/hiddenbench/tasks"
+  reports_dir: "outputs/hiddenbench/reports"
+  use_official_data: true
+  use_custom_tasks: true
+  run_full_profile: true
+
+advanced:
+  max_retries: 3
+  retry_delay: 1.0
+  rate_limit: 0
+  log_level: "INFO"
+  save_intermediate: true
+  parallel_tasks: 1

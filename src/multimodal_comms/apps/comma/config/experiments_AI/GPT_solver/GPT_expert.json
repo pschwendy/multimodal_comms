@@ -1,0 +1,23 @@
+{
+    "Hyperparameters": {
+        "MAX_MISTAKES": 3,
+        "MAX_CONVERSATION_TURNS": 10,
+        "SERIAL_NUMBER": 123456
+    },
+    "Experts": [{
+        "MODEL_NAME": "o4-mini",
+        "file_path": "agents/gptagent.py",
+        "class_name": "GPTAgent",
+        "API_KEY": "",
+        "API_VERSION": "2024-12-01-preview",
+        "API_BASE": "https://ai-ossowskiai192609280883.openai.azure.com/" 
+    }],
+    "Solvers": [{
+        "MODEL_NAME": "o4-mini",
+        "file_path": "agents/gptagent.py",
+        "class_name": "GPTAgent",
+        "API_KEY": "",
+        "API_VERSION": "2024-12-01-preview",
+        "API_BASE": "https://ai-ossowskiai192609280883.openai.azure.com/" 
+    }]
+}
