@@ -5,6 +5,8 @@ and application are under `src/multimodal_comms/apps/collab_overcooked`.
 Communication can reset per episode or timestep; these are distinct recorded
 adapter variants.
 
+See the [benchmark overview, paper, and preserved original README](../../src/multimodal_comms/benchmarks/collab_overcooked/README.md).
+
 ```bash
 export PYTHONPATH="$PWD/src:$PWD"
 export OPENAI_API_KEY=...

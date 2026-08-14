@@ -6,6 +6,8 @@ configuration, execution, sweeps, and result aggregation. Dataset creation and
 model training are in `training/`; full learned-method trajectories are in the
 other experiment directories.
 
+See the [benchmark overview, paper, and preserved original README](../../src/multimodal_comms/benchmarks/hiddenbench/README.md).
+
 ## Run a benchmark condition
 
 Copy `configs/config.example.yaml`, select a provider, and set credentials in

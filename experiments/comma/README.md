@@ -5,6 +5,8 @@ The COMMA Tk application and puzzle assets live in
 sweep aggregation. Optional representation-match data preparation lives under
 `training/benchmark_adaptation/comma/`.
 
+See the [benchmark overview, paper, and preserved original README](../../src/multimodal_comms/benchmarks/comma/README.md).
+
 ```bash
 export PYTHONPATH="$PWD/src:$PWD"
 export COMMA_COMPRESSOR=identity

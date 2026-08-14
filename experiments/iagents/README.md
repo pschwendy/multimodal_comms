@@ -6,6 +6,8 @@ runtime, and sanitized configuration live under
 Needle-in-the-Persona, and Schedule are retained here with their database
 importers.
 
+See the [benchmark overview, paper, and preserved original README](../../src/multimodal_comms/benchmarks/iagents/README.md).
+
 Offline evaluation needs JSONL records containing a task prompt, answer, and
 the persona/context fields used by `needle_common.py`:
 
